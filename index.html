@@ -81,19 +81,16 @@ header img {
     <img src="Resources/NiRa4.png" alt="NiRa Icon" style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
   </div>
     <div class="right">
-      <iframe 
-      src="https://copilotstudio.microsoft.com/environments/15bb59f1-7263-ee06-ba08-f20fcc3c5a0a/bots/cre6c_agent/webchat?__version__=2"
-      style="width: 65%; height: 75%; border: none; border-radius: 10px;box-shadow: 0 4px 20px rgba(0,0,0,0.2); z-index: 9998; background-color: white;">
-    </iframe>
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="WellsPro-News-Letter-Agent"
+  agent-id="1d996b1d-ed24-4fb0-9970-53206f5c1c6a"
+  language-code="en"
+></df-messenger>
     </div>
   </div>
-  <script>
-    const launcher = document.getElementById('chatLauncher');
-    const container = document.getElementById('chatContainer');
+  
 
-    launcher.addEventListener('click', () => {
-      container.style.display = container.style.display === 'none' ? 'block' : 'none';
-    });
-  </script>
 </body>
 </html>
